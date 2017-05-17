@@ -132,7 +132,8 @@ span.text-test:hover {
 
 .circle h1 {
   margin-top: -5rem; }
-.circle #left-eye, .circle #right-eye {
+.circle #left-eye,
+.circle #right-eye {
   position: relative;
   top: 22.5rem;
   transform: scale(0.7);
@@ -154,6 +155,14 @@ span.text-test:hover {
   #whole-head #beige-head {
     fill: #f8eded; }
 
+#femaleLegend {
+  background-image: url("../img/filled.png");
+  background-repeat: no-repeat; }
+
+#maleLegend {
+  background-image: url("../img/outline.png");
+  background-repeat: no-repeat; }
+
 #nose-shape {
   fill: #f8eded; }
 
@@ -165,127 +174,128 @@ span.text-test:hover {
   transform: scale(0.5);
   -moz-transform-origin: 0 0; }
 
-#dataviz {
+#everything {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  width: 1100px; }
-  #dataviz .buffer {
-    width: 5%; }
-  #dataviz p {
-    font-size: 9px; }
-  #dataviz .description {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-family: Open Sans, Arial, sans-serif; }
-  #dataviz .introPara {
-    font-size: 1rem; }
-  #dataviz .intro {
-    width: 60%;
-    margin-bottom: 40px; }
-  #dataviz .filterContainer {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    min-width: 300px;
-    align-content: space-between;
-    justify-content: space-between;
-    margin-bottom: 100px; }
-  #dataviz .legend {
-    display: flex;
-    flex-direction: column; }
-  #dataviz .legendContainer {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-content: space-between; }
-  #dataviz .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center; }
-  #dataviz .legendStuff {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center; }
-  #dataviz .characterCircle {
-    opacity: 1.0; }
-  #dataviz .filterButton {
-    border-radius: 30%;
-    border: 1px solid #333;
-    background-color: #333;
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/checkMark.png");
-    background-position: center; }
-  #dataviz .legendItem {
-    border-radius: 20%;
-    background-color: gray;
-    width: 30px;
-    height: 5px;
-    margin-bottom: -8px; }
-  #dataviz .legendGender {
-    width: 20px;
-    height: 20px;
-    padding-left: 8px;
-    padding-right: 8px; }
-  #dataviz #maleLegend {
-    background-image: url("../img/outline.png");
-    background-repeat: no-repeat; }
-  #dataviz #mL {
-    margin-left: -18px; }
-  #dataviz #fL {
-    margin-left: -17px; }
-  #dataviz #tooltip-wrapper {
-    position: absolute; }
-  #dataviz #femaleLegend {
-    background-image: url("../img/filled.png");
-    background-repeat: no-repeat; }
-  #dataviz .filterButton:hover {
-    border: 1px solid red; }
-  #dataviz #tooltip {
-    background-color: #333;
-    height: auto;
-    width: auto;
-    padding: 10px;
-    position: fixed;
-    display: none;
-    border-radius: 3%; }
-  #dataviz #tooltip .title {
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    text-transform: uppercase; }
-  #dataviz #tooltip .info {
-    color: white;
-    font-size: 11px;
-    font-weight: 300;
-    text-transform: capitalize; }
-  #dataviz #tooltip .movie {
-    font-size: 11px;
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 10px; }
-  #dataviz .graph-title {
-    font-size: 14px;
-    font-weight: 600;
-    font-family: Open Sans, Arial, sans-serif;
-    fill: black; }
-  #dataviz .graph-title:hover {
-    fill: black; }
-  #dataviz .rect1 {
-    fill: black; }
-  #dataviz .rect2 {
-    fill: #117733; }
-  #dataviz .filmMakers {
-    stroke-width: 3; }
-  #dataviz .label {
-    fill: black; }
+  height: 200px;
+  width: 1000px; }
+
+.intro {
+  width: 60%; }
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  min-width: 300px;
+  align-content: space-between;
+  justify-content: space-between; }
+  .filterContainer p {
+    padding-left: 10px; }
+
+.legend {
+  display: flex;
+  flex-direction: column; }
+
+.legendContainer {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between; }
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+.legendStuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 10px; }
+
+.characterCircle {
+  opacity: 1.0; }
+
+.filterButton {
+  border-radius: 30%;
+  border: 1px solid gray;
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkMark.png");
+  background-position: center; }
+
+.legendItem {
+  border-radius: 20%;
+  background-color: gray;
+  width: 30px;
+  height: 5px;
+  margin-bottom: -8px; }
+
+.filterButton:hover {
+  border: 1px solid red; }
+
+svg#main-chart {
+  margin-top: 80px !important; }
+
+#tooltip {
+  background-color: #333;
+  border: solid 1px #888888;
+  height: auto;
+  width: auto;
+  padding: 5px;
+  position: fixed;
+  display: none; }
+
+#tooltip .title {
+  font-family: "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase; }
+
+#tooltip .info {
+  color: white;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: capitalize; }
+
+#tooltip .movie {
+  font-family: "Gil Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 10px; }
+
+.graph-title {
+  font-family: "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  fill: black; }
+
+.graph-title:hover {
+  fill: black; }
+
+.rect1 {
+  fill: black; }
+
+.rect2 {
+  fill: #117733; }
+
+.filmMakers {
+  stroke-width: 3; }
+
+.label {
+  fill: black; }
 
 @keyframes blink {
   0% {
@@ -294,5 +304,109 @@ span.text-test:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@media screen and (min-width: 320px) {
+  body h1 {
+    font-size: 2rem; }
+
+  .circle #right-eye {
+    left: -6.5rem; }
+
+  .circle #left-eye {
+    left: 6.5rem; }
+
+  .circle #right-eye,
+  .circle #left-eye {
+    top: 23.5rem;
+    transform: scale(0.6); }
+
+  .down-arrow {
+    display: none; }
+
+  span.text-test {
+    opacity: 1; }
+
+  .damon-left {
+    width: 207.5px;
+    height: 100.5px; }
+
+  #page4 {
+    margin-top: 2250px; }
+
+  .movie-text {
+    width: 300px; }
+
+  #viz-heads {
+    margin-left: 43px;
+    margin-top: 70px; }
+
+  #page3 .flex-container {
+    margin-left: 50px; }
+
+  .damon-left,
+  .right-flex {
+    margin: 2rem; }
+
+  .gif-col {
+    display: initial; }
+
+  .intro {
+    margin-top: 420px; }
+
+  .movie-text p {
+    display: none; } }
+@media screen and (min-width: 700px) {
+  body h1 {
+    font-size: 3rem; }
+
+  .intro {
+    margin-top: initial; }
+
+  #everything {
+    margin-top: initial; }
+
+  .gif-col {
+    display: flex; }
+
+  .movie-text p {
+    display: inherit; }
+
+  .damon-left,
+  .right-flex {
+    margin: 1rem; }
+
+  .down-arrow {
+    display: block;
+    margin-left: 45%; }
+
+  span.text-test {
+    opacity: 0; }
+
+  .damon-left {
+    width: auto;
+    height: auto; }
+
+  .movie-text {
+    width: initial; }
+
+  #viz-heads {
+    margin-left: initial;
+    margin-top: initial; }
+
+  #page4 {
+    margin-top: auto; }
+
+  #left-eye,
+  #right-eye {
+    position: relative;
+    top: 22.5rem !important;
+    transform: scale(0.7) !important;
+    z-index: 2;
+    border-radius: 50%; }
+
+  #right-eye {
+    left: -7rem !important; }
+
+  #left-eye {
+    left: 7rem !important; } }
 
 /*# sourceMappingURL=style.css.map */
